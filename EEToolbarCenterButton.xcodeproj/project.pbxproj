@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98F29A7014EF718A006EDA25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F29A6F14EF718A006EDA25 /* UIKit.framework */; };
+		98F29A7214EF718A006EDA25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F29A7114EF718A006EDA25 /* Foundation.framework */; };
+		98F29A7414EF718A006EDA25 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F29A7314EF718A006EDA25 /* CoreGraphics.framework */; };
+		98F29A7A14EF718A006EDA25 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98F29A7814EF718A006EDA25 /* InfoPlist.strings */; };
+		98F29A7C14EF718A006EDA25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F29A7B14EF718A006EDA25 /* main.m */; };
+		98F29A8014EF718A006EDA25 /* EEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F29A7F14EF718A006EDA25 /* EEAppDelegate.m */; };
+		98F29A8314EF718A006EDA25 /* EEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F29A8214EF718A006EDA25 /* EEViewController.m */; };
+		98F29A8614EF718A006EDA25 /* EEViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F29A8414EF718A006EDA25 /* EEViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		98F29A6B14EF718A006EDA25 /* EEToolbarCenterButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EEToolbarCenterButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98F29A6F14EF718A006EDA25 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		98F29A7114EF718A006EDA25 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		98F29A7314EF718A006EDA25 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		98F29A7714EF718A006EDA25 /* EEToolbarCenterButton-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EEToolbarCenterButton-Info.plist"; sourceTree = "<group>"; };
+		98F29A7914EF718A006EDA25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		98F29A7B14EF718A006EDA25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		98F29A7D14EF718A006EDA25 /* EEToolbarCenterButton-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EEToolbarCenterButton-Prefix.pch"; sourceTree = "<group>"; };
+		98F29A7E14EF718A006EDA25 /* EEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EEAppDelegate.h; sourceTree = "<group>"; };
+		98F29A7F14EF718A006EDA25 /* EEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEAppDelegate.m; sourceTree = "<group>"; };
+		98F29A8114EF718A006EDA25 /* EEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EEViewController.h; sourceTree = "<group>"; };
+		98F29A8214EF718A006EDA25 /* EEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEViewController.m; sourceTree = "<group>"; };
+		98F29A8514EF718A006EDA25 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EEViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98F29A6814EF718A006EDA25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98F29A7014EF718A006EDA25 /* UIKit.framework in Frameworks */,
+				98F29A7214EF718A006EDA25 /* Foundation.framework in Frameworks */,
+				98F29A7414EF718A006EDA25 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98F29A6014EF718A006EDA25 = {
+			isa = PBXGroup;
+			children = (
+				98F29A7514EF718A006EDA25 /* EEToolbarCenterButton */,
+				98F29A6E14EF718A006EDA25 /* Frameworks */,
+				98F29A6C14EF718A006EDA25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98F29A6C14EF718A006EDA25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98F29A6B14EF718A006EDA25 /* EEToolbarCenterButton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98F29A6E14EF718A006EDA25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98F29A6F14EF718A006EDA25 /* UIKit.framework */,
+				98F29A7114EF718A006EDA25 /* Foundation.framework */,
+				98F29A7314EF718A006EDA25 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98F29A7514EF718A006EDA25 /* EEToolbarCenterButton */ = {
+			isa = PBXGroup;
+			children = (
+				98F29A7E14EF718A006EDA25 /* EEAppDelegate.h */,
+				98F29A7F14EF718A006EDA25 /* EEAppDelegate.m */,
+				98F29A8114EF718A006EDA25 /* EEViewController.h */,
+				98F29A8214EF718A006EDA25 /* EEViewController.m */,
+				98F29A8414EF718A006EDA25 /* EEViewController.xib */,
+				98F29A7614EF718A006EDA25 /* Supporting Files */,
+			);
+			path = EEToolbarCenterButton;
+			sourceTree = "<group>";
+		};
+		98F29A7614EF718A006EDA25 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98F29A7714EF718A006EDA25 /* EEToolbarCenterButton-Info.plist */,
+				98F29A7814EF718A006EDA25 /* InfoPlist.strings */,
+				98F29A7B14EF718A006EDA25 /* main.m */,
+				98F29A7D14EF718A006EDA25 /* EEToolbarCenterButton-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98F29A6A14EF718A006EDA25 /* EEToolbarCenterButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98F29A8914EF718A006EDA25 /* Build configuration list for PBXNativeTarget "EEToolbarCenterButton" */;
+			buildPhases = (
+				98F29A6714EF718A006EDA25 /* Sources */,
+				98F29A6814EF718A006EDA25 /* Frameworks */,
+				98F29A6914EF718A006EDA25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EEToolbarCenterButton;
+			productName = EEToolbarCenterButton;
+			productReference = 98F29A6B14EF718A006EDA25 /* EEToolbarCenterButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98F29A6214EF718A006EDA25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "el eleven";
+			};
+			buildConfigurationList = 98F29A6514EF718A006EDA25 /* Build configuration list for PBXProject "EEToolbarCenterButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 98F29A6014EF718A006EDA25;
+			productRefGroup = 98F29A6C14EF718A006EDA25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98F29A6A14EF718A006EDA25 /* EEToolbarCenterButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98F29A6914EF718A006EDA25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98F29A7A14EF718A006EDA25 /* InfoPlist.strings in Resources */,
+				98F29A8614EF718A006EDA25 /* EEViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98F29A6714EF718A006EDA25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98F29A7C14EF718A006EDA25 /* main.m in Sources */,
+				98F29A8014EF718A006EDA25 /* EEAppDelegate.m in Sources */,
+				98F29A8314EF718A006EDA25 /* EEViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		98F29A7814EF718A006EDA25 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98F29A7914EF718A006EDA25 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		98F29A8414EF718A006EDA25 /* EEViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98F29A8514EF718A006EDA25 /* en */,
+			);
+			name = EEViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98F29A8714EF718A006EDA25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		98F29A8814EF718A006EDA25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98F29A8A14EF718A006EDA25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EEToolbarCenterButton/EEToolbarCenterButton-Prefix.pch";
+				INFOPLIST_FILE = "EEToolbarCenterButton/EEToolbarCenterButton-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		98F29A8B14EF718A006EDA25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EEToolbarCenterButton/EEToolbarCenterButton-Prefix.pch";
+				INFOPLIST_FILE = "EEToolbarCenterButton/EEToolbarCenterButton-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98F29A6514EF718A006EDA25 /* Build configuration list for PBXProject "EEToolbarCenterButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98F29A8714EF718A006EDA25 /* Debug */,
+				98F29A8814EF718A006EDA25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98F29A8914EF718A006EDA25 /* Build configuration list for PBXNativeTarget "EEToolbarCenterButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98F29A8A14EF718A006EDA25 /* Debug */,
+				98F29A8B14EF718A006EDA25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98F29A6214EF718A006EDA25 /* Project object */;
+}
