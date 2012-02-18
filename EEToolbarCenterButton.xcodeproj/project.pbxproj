@@ -29,6 +29,7 @@
 		98F29AB214EF7C94006EDA25 /* CenterButtonIconPawDisabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98F29AA614EF7C94006EDA25 /* CenterButtonIconPawDisabled@2x.png */; };
 		98F29AB314EF7C94006EDA25 /* CenterButtonIconPawHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 98F29AA714EF7C94006EDA25 /* CenterButtonIconPawHighlighted.png */; };
 		98F29AB414EF7C94006EDA25 /* CenterButtonIconPawHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98F29AA814EF7C94006EDA25 /* CenterButtonIconPawHighlighted@2x.png */; };
+		98F29ADB14EF86DE006EDA25 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 98F29ADA14EF86DE006EDA25 /* LICENSE.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		98F29AA614EF7C94006EDA25 /* CenterButtonIconPawDisabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CenterButtonIconPawDisabled@2x.png"; sourceTree = "<group>"; };
 		98F29AA714EF7C94006EDA25 /* CenterButtonIconPawHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CenterButtonIconPawHighlighted.png; sourceTree = "<group>"; };
 		98F29AA814EF7C94006EDA25 /* CenterButtonIconPawHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CenterButtonIconPawHighlighted@2x.png"; sourceTree = "<group>"; };
+		98F29ADA14EF86DE006EDA25 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		98F29A6014EF718A006EDA25 = {
 			isa = PBXGroup;
 			children = (
+				98F29ADA14EF86DE006EDA25 /* LICENSE.txt */,
 				98F29A9014EF73A5006EDA25 /* Classes */,
 				98F29A7514EF718A006EDA25 /* EEToolbarCenterButton */,
 				98F29A6E14EF718A006EDA25 /* Frameworks */,
@@ -225,6 +228,7 @@
 				98F29AB214EF7C94006EDA25 /* CenterButtonIconPawDisabled@2x.png in Resources */,
 				98F29AB314EF7C94006EDA25 /* CenterButtonIconPawHighlighted.png in Resources */,
 				98F29AB414EF7C94006EDA25 /* CenterButtonIconPawHighlighted@2x.png in Resources */,
+				98F29ADB14EF86DE006EDA25 /* LICENSE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
