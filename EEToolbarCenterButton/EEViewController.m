@@ -10,51 +10,84 @@
 
 @implementation EEViewController
 
-- (void)didReceiveMemoryWarning
+@synthesize toolbar;
+@synthesize barButtonItem;
+@synthesize segmentedControlButtonType;
+
+#pragma mark - Private methods
+- (void)changeCenterButtonWithPaw:(BOOL)isPaw
 {
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
+    NSString *imageName = isPaw ? @"CenterButtonIconPaw" : @"CenterButtonIconHeart";
+    NSString *highlightedImageName = isPaw ? @"CenterButtonIconPawHighlighted" : @"CenterButtonIconHeartHighlighted";
+    NSString *disabledImageName = isPaw ? @"CenterButtonIconPawDisabled" : @"CenterButtonIconHeartDisabled";
+    UIImage *centerButtonImage = [UIImage imageNamed:imageName];
+    UIImage *centerButtonImageHighlighted = [UIImage imageNamed:highlightedImageName];
+    UIImage *centerButtonImageDisabled = [UIImage imageNamed:disabledImageName];
+    EEToolbarCenterButtonItem *centerButtonItem = [[[EEToolbarCenterButtonItem alloc] 
+                                                    initWithImage:centerButtonImage
+                                                    highlightedImage:centerButtonImageHighlighted
+                                                    disabledImage:centerButtonImageDisabled
+                                                    target:self
+                                                    action:@selector(didTapCenterButton:)]
+                                                   autorelease];
+                                                   
+    self.toolbar.centerButtonOverlay.buttonItem = centerButtonItem;
+    
+    self.barButtonItem.title = @"Disable";
 }
 
 #pragma mark - View lifecycle
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    // Toolbar
+	self.toolbar.centerButtonFeatureEnabled = YES;
+    [self changeCenterButtonWithPaw:YES];
 }
 
 - (void)viewDidUnload
 {
+    self.segmentedControlButtonType = nil;
+    self.toolbar = nil;
+    self.barButtonItem = nil;
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    return interfaceOrientation == UIInterfaceOrientationPortrait;
 }
 
+- (void)dealloc
+{
+    [segmentedControlButtonType release];
+    [toolbar release];
+    [barButtonItem release];
+    [super dealloc];
+}
+
+#pragma mark - Event handlers
+- (void)didTapCenterButton:(id)sender
+{
+    UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Tapped"
+                                                     message:@"Center button was tapped."
+                                                    delegate:nil
+                                           cancelButtonTitle:nil
+                                           otherButtonTitles:@"Dismiss", nil]
+                          autorelease];
+    [alert show];
+}
+
+- (IBAction)didTapBarButton:(id)sender 
+{
+    self.toolbar.centerButtonOverlay.buttonItem.enabled = !self.toolbar.centerButtonOverlay.buttonItem.enabled;
+    self.barButtonItem.title = self.toolbar.centerButtonOverlay.buttonItem.enabled ? @"Disable" : @"Enable";
+}
+
+- (IBAction)segmentedControlValueChanged:(id)sender
+{
+    BOOL isPaw = self.segmentedControlButtonType.selectedSegmentIndex == 0;
+    [self changeCenterButtonWithPaw:isPaw];
+}
 @end

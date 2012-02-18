@@ -17,6 +17,18 @@
 		98F29A8614EF718A006EDA25 /* EEViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F29A8414EF718A006EDA25 /* EEViewController.xib */; };
 		98F29A9314EF73A5006EDA25 /* EEToolbarCenterButtonOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F29A9214EF73A5006EDA25 /* EEToolbarCenterButtonOverlay.m */; };
 		98F29A9714EF73DA006EDA25 /* UIToolbar+EEToolbarCenterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F29A9614EF73DA006EDA25 /* UIToolbar+EEToolbarCenterButton.m */; };
+		98F29AA914EF7C94006EDA25 /* CenterButtonIconHeart.png in Resources */ = {isa = PBXBuildFile; fileRef = 98F29A9D14EF7C94006EDA25 /* CenterButtonIconHeart.png */; };
+		98F29AAA14EF7C94006EDA25 /* CenterButtonIconHeart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98F29A9E14EF7C94006EDA25 /* CenterButtonIconHeart@2x.png */; };
+		98F29AAB14EF7C94006EDA25 /* CenterButtonIconHeartDisabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 98F29A9F14EF7C94006EDA25 /* CenterButtonIconHeartDisabled.png */; };
+		98F29AAC14EF7C94006EDA25 /* CenterButtonIconHeartDisabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98F29AA014EF7C94006EDA25 /* CenterButtonIconHeartDisabled@2x.png */; };
+		98F29AAD14EF7C94006EDA25 /* CenterButtonIconHeartHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 98F29AA114EF7C94006EDA25 /* CenterButtonIconHeartHighlighted.png */; };
+		98F29AAE14EF7C94006EDA25 /* CenterButtonIconHeartHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98F29AA214EF7C94006EDA25 /* CenterButtonIconHeartHighlighted@2x.png */; };
+		98F29AAF14EF7C94006EDA25 /* CenterButtonIconPaw.png in Resources */ = {isa = PBXBuildFile; fileRef = 98F29AA314EF7C94006EDA25 /* CenterButtonIconPaw.png */; };
+		98F29AB014EF7C94006EDA25 /* CenterButtonIconPaw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98F29AA414EF7C94006EDA25 /* CenterButtonIconPaw@2x.png */; };
+		98F29AB114EF7C94006EDA25 /* CenterButtonIconPawDisabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 98F29AA514EF7C94006EDA25 /* CenterButtonIconPawDisabled.png */; };
+		98F29AB214EF7C94006EDA25 /* CenterButtonIconPawDisabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98F29AA614EF7C94006EDA25 /* CenterButtonIconPawDisabled@2x.png */; };
+		98F29AB314EF7C94006EDA25 /* CenterButtonIconPawHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 98F29AA714EF7C94006EDA25 /* CenterButtonIconPawHighlighted.png */; };
+		98F29AB414EF7C94006EDA25 /* CenterButtonIconPawHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98F29AA814EF7C94006EDA25 /* CenterButtonIconPawHighlighted@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +49,18 @@
 		98F29A9214EF73A5006EDA25 /* EEToolbarCenterButtonOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EEToolbarCenterButtonOverlay.m; sourceTree = "<group>"; };
 		98F29A9514EF73DA006EDA25 /* UIToolbar+EEToolbarCenterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+EEToolbarCenterButton.h"; sourceTree = "<group>"; };
 		98F29A9614EF73DA006EDA25 /* UIToolbar+EEToolbarCenterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+EEToolbarCenterButton.m"; sourceTree = "<group>"; };
+		98F29A9D14EF7C94006EDA25 /* CenterButtonIconHeart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CenterButtonIconHeart.png; sourceTree = "<group>"; };
+		98F29A9E14EF7C94006EDA25 /* CenterButtonIconHeart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CenterButtonIconHeart@2x.png"; sourceTree = "<group>"; };
+		98F29A9F14EF7C94006EDA25 /* CenterButtonIconHeartDisabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CenterButtonIconHeartDisabled.png; sourceTree = "<group>"; };
+		98F29AA014EF7C94006EDA25 /* CenterButtonIconHeartDisabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CenterButtonIconHeartDisabled@2x.png"; sourceTree = "<group>"; };
+		98F29AA114EF7C94006EDA25 /* CenterButtonIconHeartHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CenterButtonIconHeartHighlighted.png; sourceTree = "<group>"; };
+		98F29AA214EF7C94006EDA25 /* CenterButtonIconHeartHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CenterButtonIconHeartHighlighted@2x.png"; sourceTree = "<group>"; };
+		98F29AA314EF7C94006EDA25 /* CenterButtonIconPaw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CenterButtonIconPaw.png; sourceTree = "<group>"; };
+		98F29AA414EF7C94006EDA25 /* CenterButtonIconPaw@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CenterButtonIconPaw@2x.png"; sourceTree = "<group>"; };
+		98F29AA514EF7C94006EDA25 /* CenterButtonIconPawDisabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CenterButtonIconPawDisabled.png; sourceTree = "<group>"; };
+		98F29AA614EF7C94006EDA25 /* CenterButtonIconPawDisabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CenterButtonIconPawDisabled@2x.png"; sourceTree = "<group>"; };
+		98F29AA714EF7C94006EDA25 /* CenterButtonIconPawHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CenterButtonIconPawHighlighted.png; sourceTree = "<group>"; };
+		98F29AA814EF7C94006EDA25 /* CenterButtonIconPawHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CenterButtonIconPawHighlighted@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +125,7 @@
 				98F29A7814EF718A006EDA25 /* InfoPlist.strings */,
 				98F29A7B14EF718A006EDA25 /* main.m */,
 				98F29A7D14EF718A006EDA25 /* EEToolbarCenterButton-Prefix.pch */,
+				98F29A9C14EF7C94006EDA25 /* Images */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -114,6 +139,25 @@
 				98F29A9614EF73DA006EDA25 /* UIToolbar+EEToolbarCenterButton.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		98F29A9C14EF7C94006EDA25 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				98F29A9D14EF7C94006EDA25 /* CenterButtonIconHeart.png */,
+				98F29A9E14EF7C94006EDA25 /* CenterButtonIconHeart@2x.png */,
+				98F29A9F14EF7C94006EDA25 /* CenterButtonIconHeartDisabled.png */,
+				98F29AA014EF7C94006EDA25 /* CenterButtonIconHeartDisabled@2x.png */,
+				98F29AA114EF7C94006EDA25 /* CenterButtonIconHeartHighlighted.png */,
+				98F29AA214EF7C94006EDA25 /* CenterButtonIconHeartHighlighted@2x.png */,
+				98F29AA314EF7C94006EDA25 /* CenterButtonIconPaw.png */,
+				98F29AA414EF7C94006EDA25 /* CenterButtonIconPaw@2x.png */,
+				98F29AA514EF7C94006EDA25 /* CenterButtonIconPawDisabled.png */,
+				98F29AA614EF7C94006EDA25 /* CenterButtonIconPawDisabled@2x.png */,
+				98F29AA714EF7C94006EDA25 /* CenterButtonIconPawHighlighted.png */,
+				98F29AA814EF7C94006EDA25 /* CenterButtonIconPawHighlighted@2x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +213,18 @@
 			files = (
 				98F29A7A14EF718A006EDA25 /* InfoPlist.strings in Resources */,
 				98F29A8614EF718A006EDA25 /* EEViewController.xib in Resources */,
+				98F29AA914EF7C94006EDA25 /* CenterButtonIconHeart.png in Resources */,
+				98F29AAA14EF7C94006EDA25 /* CenterButtonIconHeart@2x.png in Resources */,
+				98F29AAB14EF7C94006EDA25 /* CenterButtonIconHeartDisabled.png in Resources */,
+				98F29AAC14EF7C94006EDA25 /* CenterButtonIconHeartDisabled@2x.png in Resources */,
+				98F29AAD14EF7C94006EDA25 /* CenterButtonIconHeartHighlighted.png in Resources */,
+				98F29AAE14EF7C94006EDA25 /* CenterButtonIconHeartHighlighted@2x.png in Resources */,
+				98F29AAF14EF7C94006EDA25 /* CenterButtonIconPaw.png in Resources */,
+				98F29AB014EF7C94006EDA25 /* CenterButtonIconPaw@2x.png in Resources */,
+				98F29AB114EF7C94006EDA25 /* CenterButtonIconPawDisabled.png in Resources */,
+				98F29AB214EF7C94006EDA25 /* CenterButtonIconPawDisabled@2x.png in Resources */,
+				98F29AB314EF7C94006EDA25 /* CenterButtonIconPawHighlighted.png in Resources */,
+				98F29AB414EF7C94006EDA25 /* CenterButtonIconPawHighlighted@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
