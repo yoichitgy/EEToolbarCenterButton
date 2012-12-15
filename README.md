@@ -3,6 +3,8 @@ EEToolbarCenterButton
 
 EEToolbarCenterButton is a component to add a featured button to the center of UIToolbar. It handles button alignment, and helps you use buttom images whose height is larger than UIToolbar height.
 
+![Screenshot](https://raw.github.com/el-eleven/EEToolbarCenterButton/master/Images/Screenshot.jpg)
+
 Installation
 -----------
 
