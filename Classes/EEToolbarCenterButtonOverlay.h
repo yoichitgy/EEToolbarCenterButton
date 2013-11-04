@@ -28,22 +28,13 @@
 
 #pragma mark EEToolbarCenterButtonItem
 @interface EEToolbarCenterButtonItem : NSObject
-{
- @private
-    UIImage *image_;
-    UIImage *__weak highlightedImage_;
-    UIImage *__weak disabledImage_;
-    id __weak target_;
-    SEL action_;
-    BOOL enabled_;
-}
 
-@property (nonatomic, readonly) UIImage *image;
-@property (weak, nonatomic, readonly) UIImage *highlightedImage;
-@property (weak, nonatomic, readonly) UIImage *disabledImage;
-@property (weak, nonatomic, readonly) id target;
-@property (nonatomic, readonly) SEL action;
-@property (nonatomic, readwrite) BOOL enabled;
+@property (nonatomic, strong) UIImage *image;
+@property (nonatomic, weak) UIImage *highlightedImage;
+@property (nonatomic, weak) UIImage *disabledImage;
+@property (nonatomic, weak) id target;
+@property (nonatomic) SEL action;
+@property (nonatomic) BOOL enabled;
 
 - (id)initWithImage:(UIImage *)image
    highlightedImage:(UIImage *)highlightedImage
@@ -60,11 +51,6 @@
 
 #pragma mark - EEToolbarCenterButtonOverlay
 @interface EEToolbarCenterButtonOverlay : UIView
-{
- @private
-    EEToolbarCenterButtonItem *buttonItem_;
-    UIButton *button_;
-}
 
 @property (nonatomic, strong) EEToolbarCenterButtonItem *buttonItem;
 - (id)init;
