@@ -101,9 +101,7 @@
 
 - (void)setButtonItem:(EEToolbarCenterButtonItem *)item
 {
-    if (item != self.buttonItem) {
-        [self.buttonItem removeObserver:self forKeyPath:@"enabled"];
-    }
+    [self.buttonItem removeObserver:self forKeyPath:@"enabled"];
     _buttonItem = item;
     [self.buttonItem addObserver:self forKeyPath:@"enabled" options:NSKeyValueObservingOptionNew context:NULL];
     
