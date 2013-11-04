@@ -53,11 +53,20 @@
     [super viewDidUnload];
 }
 
+- (BOOL)shouldAutorotate
+{
+    return NO;
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationPortrait;
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return interfaceOrientation == UIInterfaceOrientationPortrait;
 }
-
 
 #pragma mark - Event handlers
 - (void)didTapCenterButton:(id)sender
