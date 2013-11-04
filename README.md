@@ -5,6 +5,10 @@ EEToolbarCenterButton is a component to add a featured button to the center of U
 
 ![Screenshot](https://raw.github.com/el-eleven/EEToolbarCenterButton/master/Images/Screenshot.jpg)
 
+Supported Environment
+-----------
+iOS 5 or later with ARC.
+
 Installation
 -----------
 
@@ -22,13 +26,12 @@ Then create an EEToolbarCenterButtonItem with custom images and an action select
     UIImage *centerButtonImage = [UIImage imageNamed:@"ButtonImage"];
     UIImage *centerButtonImageHighlighted = [UIImage imageNamed:@"HighlighedButtonImage"];
     UIImage *centerButtonImageDisabled = [UIImage imageNamed:@"DisabledButtonImage"];
-    EEToolbarCenterButtonItem *centerButtonItem = [[[EEToolbarCenterButtonItem alloc] 
+    EEToolbarCenterButtonItem *centerButtonItem = [[EEToolbarCenterButtonItem alloc] 
                                                     initWithImage:centerButtonImage
                                                     highlightedImage:centerButtonImageHighlighted
                                                     disabledImage:centerButtonImageDisabled
                                                     target:self
-                                                    action:@selector(didTapCenterButton:)]
-                                                   autorelease];
+                                                    action:@selector(didTapCenterButton:)];
 
 At last apply the button to centerButtonOverlay property of UIToolbar added by EEToolbarCenterButton category:
 
@@ -48,4 +51,4 @@ http://naldzgraphics.net/tutorials/40-best-photoshop-tutorials-for-creating-butt
 Credits
 -----------
 
-Feel free to send pull requests or create new issues if you have feature suggestions or bug reports. If you’re going to use EEToolbarCenterButton in your project, proper attribution would be nice.
+Feel free to send pull requests or create new issues if you have feature suggestions or bug reports. If you'are going to use EEToolbarCenterButton in your project, proper attribution would be nice.

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		985FC4471827E56500A1FA98 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 985FC4461827E56500A1FA98 /* Default-568h@2x.png */; };
 		98F29A7014EF718A006EDA25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F29A6F14EF718A006EDA25 /* UIKit.framework */; };
 		98F29A7214EF718A006EDA25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F29A7114EF718A006EDA25 /* Foundation.framework */; };
 		98F29A7414EF718A006EDA25 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F29A7314EF718A006EDA25 /* CoreGraphics.framework */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		985FC4461827E56500A1FA98 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Images/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		98F29A6B14EF718A006EDA25 /* EEToolbarCenterButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EEToolbarCenterButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F29A6F14EF718A006EDA25 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		98F29A7114EF718A006EDA25 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -147,6 +149,7 @@
 		98F29A9C14EF7C94006EDA25 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				985FC4461827E56500A1FA98 /* Default-568h@2x.png */,
 				98F29A9D14EF7C94006EDA25 /* CenterButtonIconHeart.png */,
 				98F29A9E14EF7C94006EDA25 /* CenterButtonIconHeart@2x.png */,
 				98F29A9F14EF7C94006EDA25 /* CenterButtonIconHeartDisabled.png */,
@@ -227,6 +230,7 @@
 				98F29AB114EF7C94006EDA25 /* CenterButtonIconPawDisabled.png in Resources */,
 				98F29AB214EF7C94006EDA25 /* CenterButtonIconPawDisabled@2x.png in Resources */,
 				98F29AB314EF7C94006EDA25 /* CenterButtonIconPawHighlighted.png in Resources */,
+				985FC4471827E56500A1FA98 /* Default-568h@2x.png in Resources */,
 				98F29AB414EF7C94006EDA25 /* CenterButtonIconPawHighlighted@2x.png in Resources */,
 				98F29ADB14EF86DE006EDA25 /* LICENSE.txt in Resources */,
 			);
