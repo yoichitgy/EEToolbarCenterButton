@@ -31,17 +31,17 @@
 {
  @private
     UIImage *image_;
-    UIImage *highlightedImage_;
-    UIImage *disabledImage_;
-    id target_;
+    UIImage *__weak highlightedImage_;
+    UIImage *__weak disabledImage_;
+    id __weak target_;
     SEL action_;
     BOOL enabled_;
 }
 
 @property (nonatomic, readonly) UIImage *image;
-@property (nonatomic, readonly) UIImage *highlightedImage;
-@property (nonatomic, readonly) UIImage *disabledImage;
-@property (nonatomic, readonly) id target;
+@property (weak, nonatomic, readonly) UIImage *highlightedImage;
+@property (weak, nonatomic, readonly) UIImage *disabledImage;
+@property (weak, nonatomic, readonly) id target;
 @property (nonatomic, readonly) SEL action;
 @property (nonatomic, readwrite) BOOL enabled;
 
@@ -66,7 +66,7 @@
     UIButton *button_;
 }
 
-@property (nonatomic, retain) EEToolbarCenterButtonItem *buttonItem;
+@property (nonatomic, strong) EEToolbarCenterButtonItem *buttonItem;
 - (id)init;
 
 @end

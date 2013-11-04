@@ -334,6 +334,7 @@
 		98F29A8A14EF718A006EDA25 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EEToolbarCenterButton/EEToolbarCenterButton-Prefix.pch";
 				INFOPLIST_FILE = "EEToolbarCenterButton/EEToolbarCenterButton-Info.plist";
@@ -346,6 +347,7 @@
 		98F29A8B14EF718A006EDA25 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EEToolbarCenterButton/EEToolbarCenterButton-Prefix.pch";
 				INFOPLIST_FILE = "EEToolbarCenterButton/EEToolbarCenterButton-Info.plist";

@@ -44,9 +44,9 @@
 {
     self = [super init];
     if (nil != self) {
-        image_ = [image retain];
-        highlightedImage_ = nil == highlightedImage ? [image retain] : [highlightedImage retain];
-        disabledImage_ = nil == disabledImage ? [image retain] : [disabledImage retain];
+        image_ = image;
+        highlightedImage_ = nil == highlightedImage ? image : highlightedImage;
+        disabledImage_ = nil == disabledImage ? image : disabledImage;
         target_ = target;
         action_ = action;
         enabled_ = YES;
@@ -66,14 +66,6 @@
                         action:action];
 }
 
-- (void)dealloc
-{
-    [image_ release];
-    [highlightedImage_ release];
-    [disabledImage_ release];
-    // Do not release target_ and action_.
-    [super dealloc];
-}
 
 @end
 
@@ -103,9 +95,6 @@
 - (void)dealloc
 {
     [buttonItem_ removeObserver:self forKeyPath:@"enabled"];
-    [buttonItem_ release];
-    [button_ release];
-    [super dealloc];
 }
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
@@ -117,16 +106,14 @@
 {
     if (item != buttonItem_) {
         [buttonItem_ removeObserver:self forKeyPath:@"enabled"];
-        [buttonItem_ release];
     }
-    buttonItem_ = [item retain];
+    buttonItem_ = item;
     [buttonItem_ addObserver:self forKeyPath:@"enabled" options:NSKeyValueObservingOptionNew context:NULL];
     
     [button_ removeFromSuperview];
-    [button_ release];
     if (nil != buttonItem_) {
         CGSize buttonSize = buttonItem_.image.size;
-        button_ = [[UIButton buttonWithType:UIButtonTypeCustom] retain];
+        button_ = [UIButton buttonWithType:UIButtonTypeCustom];
         button_.opaque = YES;
         button_.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin
                                   | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin;
