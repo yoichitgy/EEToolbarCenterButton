@@ -41,7 +41,7 @@
     }
     
     if (enabled) {
-        EEToolbarCenterButtonOverlay *overlay = [[[EEToolbarCenterButtonOverlay alloc] initWithFrame:self.bounds] autorelease];
+        EEToolbarCenterButtonOverlay *overlay = [[EEToolbarCenterButtonOverlay alloc] initWithFrame:self.bounds];
         [self addSubview:overlay];
         self.clipsToBounds = NO;
     }

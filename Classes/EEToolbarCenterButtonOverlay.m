@@ -29,13 +29,6 @@
 #pragma mark EEToolbarCenterButtonItem
 @implementation EEToolbarCenterButtonItem
 
-@synthesize image = image_;
-@synthesize highlightedImage = highlightedImage_;
-@synthesize disabledImage = disabledImage_;
-@synthesize target = target_;
-@synthesize action = action_;
-@synthesize enabled = enabled_;
-
 - (id)initWithImage:(UIImage *)image
    highlightedImage:(UIImage *)highlightedImage
       disabledImage:(UIImage *)disabledImage
@@ -44,12 +37,12 @@
 {
     self = [super init];
     if (nil != self) {
-        image_ = [image retain];
-        highlightedImage_ = nil == highlightedImage ? [image retain] : [highlightedImage retain];
-        disabledImage_ = nil == disabledImage ? [image retain] : [disabledImage retain];
-        target_ = target;
-        action_ = action;
-        enabled_ = YES;
+        self.image = image;
+        self.highlightedImage = nil == highlightedImage ? image : highlightedImage;
+        self.disabledImage = nil == disabledImage ? image : disabledImage;
+        self.target = target;
+        self.action = action;
+        self.enabled = YES;
     }
     return self;
 }
@@ -66,22 +59,18 @@
                         action:action];
 }
 
-- (void)dealloc
-{
-    [image_ release];
-    [highlightedImage_ release];
-    [disabledImage_ release];
-    // Do not release target_ and action_.
-    [super dealloc];
-}
-
 @end
 
 
 #pragma mark - EEToolbarCenterButtonOverlay
-@implementation EEToolbarCenterButtonOverlay
+@interface EEToolbarCenterButtonOverlay ()
 
-@synthesize buttonItem = buttonItem_;
+@property (nonatomic, strong) UIButton *button;
+
+@end
+
+
+@implementation EEToolbarCenterButtonOverlay
 
 - (id)init
 {
@@ -102,46 +91,41 @@
 
 - (void)dealloc
 {
-    [buttonItem_ removeObserver:self forKeyPath:@"enabled"];
-    [buttonItem_ release];
-    [button_ release];
-    [super dealloc];
+    [self.buttonItem removeObserver:self forKeyPath:@"enabled"];
 }
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
 {
-    return nil == button_ ? NO : CGRectContainsPoint(button_.frame, point);
+    return nil == self.button ? NO : CGRectContainsPoint(self.button.frame, point);
 }
 
 - (void)setButtonItem:(EEToolbarCenterButtonItem *)item
 {
-    if (item != buttonItem_) {
-        [buttonItem_ removeObserver:self forKeyPath:@"enabled"];
-        [buttonItem_ release];
+    if (item != self.buttonItem) {
+        [self.buttonItem removeObserver:self forKeyPath:@"enabled"];
     }
-    buttonItem_ = [item retain];
-    [buttonItem_ addObserver:self forKeyPath:@"enabled" options:NSKeyValueObservingOptionNew context:NULL];
+    _buttonItem = item;
+    [self.buttonItem addObserver:self forKeyPath:@"enabled" options:NSKeyValueObservingOptionNew context:NULL];
     
-    [button_ removeFromSuperview];
-    [button_ release];
-    if (nil != buttonItem_) {
-        CGSize buttonSize = buttonItem_.image.size;
-        button_ = [[UIButton buttonWithType:UIButtonTypeCustom] retain];
-        button_.opaque = YES;
-        button_.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin
-                                  | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin;
-        button_.frame = CGRectMake(0.0f, 0.0f, buttonSize.width, buttonSize.height);
-        [button_ setBackgroundImage:buttonItem_.image forState:UIControlStateNormal];
-        [button_ setBackgroundImage:buttonItem_.highlightedImage forState:UIControlStateHighlighted];
-        [button_ setBackgroundImage:buttonItem_.disabledImage forState:UIControlStateDisabled];
-        [button_ addTarget:buttonItem_.target action:buttonItem_.action forControlEvents:UIControlEventTouchUpInside];
-        button_.enabled = buttonItem_.enabled;
+    [self.button removeFromSuperview];
+    if (nil != self.buttonItem) {
+        CGSize buttonSize = self.buttonItem.image.size;
+        self.button = [UIButton buttonWithType:UIButtonTypeCustom];
+        self.button.opaque = YES;
+        self.button.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin
+                                       | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin;
+        self.button.frame = CGRectMake(0.0f, 0.0f, buttonSize.width, buttonSize.height);
+        [self.button setBackgroundImage:self.buttonItem.image forState:UIControlStateNormal];
+        [self.button setBackgroundImage:self.buttonItem.highlightedImage forState:UIControlStateHighlighted];
+        [self.button setBackgroundImage:self.buttonItem.disabledImage forState:UIControlStateDisabled];
+        [self.button addTarget:self.buttonItem.target action:self.buttonItem.action forControlEvents:UIControlEventTouchUpInside];
+        self.button.enabled = self.buttonItem.enabled;
         
         CGFloat heightDifference = MAX(0.0f, buttonSize.height - self.frame.size.height);
         CGPoint center = CGPointMake(self.center.x, (self.frame.size.height - heightDifference) / 2.0f);
-        button_.center = center;
+        self.button.center = center;
         
-        [self addSubview:button_];
+        [self addSubview:self.button];
     }
 }
 
@@ -149,7 +133,7 @@
 {
     if ([keyPath isEqual:@"enabled"]) {
         NSNumber *enabled = [change objectForKey:NSKeyValueChangeNewKey];
-        button_.enabled = [enabled boolValue];
+        self.button.enabled = [enabled boolValue];
     }
 }
 

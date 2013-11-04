@@ -11,9 +11,9 @@
 
 @interface EEViewController : UIViewController
 
-@property (retain, nonatomic) IBOutlet UIToolbar *toolbar;
-@property (retain, nonatomic) IBOutlet UIBarButtonItem *barButtonItem;
-@property (retain, nonatomic) IBOutlet UISegmentedControl *segmentedControlButtonType;
+@property (strong, nonatomic) IBOutlet UIToolbar *toolbar;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *barButtonItem;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *segmentedControlButtonType;
 - (IBAction)didTapBarButton:(id)sender;
 - (IBAction)segmentedControlValueChanged:(id)sender;
 

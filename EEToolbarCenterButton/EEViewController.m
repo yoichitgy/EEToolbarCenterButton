@@ -23,13 +23,12 @@
     UIImage *centerButtonImage = [UIImage imageNamed:imageName];
     UIImage *centerButtonImageHighlighted = [UIImage imageNamed:highlightedImageName];
     UIImage *centerButtonImageDisabled = [UIImage imageNamed:disabledImageName];
-    EEToolbarCenterButtonItem *centerButtonItem = [[[EEToolbarCenterButtonItem alloc] 
+    EEToolbarCenterButtonItem *centerButtonItem = [[EEToolbarCenterButtonItem alloc] 
                                                     initWithImage:centerButtonImage
                                                     highlightedImage:centerButtonImageHighlighted
                                                     disabledImage:centerButtonImageDisabled
                                                     target:self
-                                                    action:@selector(didTapCenterButton:)]
-                                                   autorelease];
+                                                    action:@selector(didTapCenterButton:)];
                                                    
     self.toolbar.centerButtonOverlay.buttonItem = centerButtonItem;
     
@@ -59,23 +58,15 @@
     return interfaceOrientation == UIInterfaceOrientationPortrait;
 }
 
-- (void)dealloc
-{
-    [segmentedControlButtonType release];
-    [toolbar release];
-    [barButtonItem release];
-    [super dealloc];
-}
 
 #pragma mark - Event handlers
 - (void)didTapCenterButton:(id)sender
 {
-    UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Tapped"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tapped"
                                                      message:@"Center button was tapped."
                                                     delegate:nil
                                            cancelButtonTitle:nil
-                                           otherButtonTitles:@"Dismiss", nil]
-                          autorelease];
+                                           otherButtonTitles:@"Dismiss", nil];
     [alert show];
 }
 
