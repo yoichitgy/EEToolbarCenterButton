@@ -48,6 +48,12 @@ Now you find a cool button at the center of UIToolbar. You can enable/disable th
 
     centerButtonItem.enabled = NO;
     
+
+Demo Project
+-----------
+Open EEToolbarCenterButton.xcodeproj and run.
+
+
 Customization
 -----------
 
