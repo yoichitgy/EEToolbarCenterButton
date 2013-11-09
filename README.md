@@ -7,18 +7,25 @@ EEToolbarCenterButton is a component to add a featured button to the center of U
 
 Supported Environment
 -----------
-iOS 5 or later with ARC.
+iOS 5 or later.
 
 Installation
 -----------
+EEToolbarCenterButton can be installed by [CocoaPods](http://cocoapods.org/) with your Podfile containing the following line.
 
-Copy files in Classes directory to your project.
+    pod 'EEToolbarCenterButton'
+
+Or, just copy files in the Classes directory to your project. In this case, you have to add the `-fobjc-arc` compiler flag to the EEToolbarCenterButton source (.m) files if your project doesn't use ARC.
 
 Usage
 -----------
 
-The usage of the center button feature is quite similar to UIToolbar with UIBarButtonItem. First of all, import "UIToolbar+EEToolbarCenterButton.h" and turn on the center button feature:
+The usage of the center button feature is quite similar to that of UIToolbar with UIBarButtonItem. First, import "UIToolbar+EEToolbarCenterButton.h" and turn on the center button feature:
 
+	#import "UIToolbar+EEToolbarCenterButton.h"
+	
+	...
+	
 	self.toolbar.centerButtonFeatureEnabled = YES;
 
 Then create an EEToolbarCenterButtonItem with custom images and an action selector:
@@ -41,6 +48,12 @@ Now you find a cool button at the center of UIToolbar. You can enable/disable th
 
     centerButtonItem.enabled = NO;
     
+
+Demo Project
+-----------
+Open EEToolbarCenterButton.xcodeproj and run.
+
+
 Customization
 -----------
 
