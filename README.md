@@ -11,8 +11,11 @@ iOS 5 or later with ARC.
 
 Installation
 -----------
+EEToolbarCenterButton can be installed by [CocoaPods](http://cocoapods.org/) with your Podfile containing the following line.
 
-Copy files in Classes directory to your project.
+    pod 'EEToolbarCenterButton'
+
+Or, just copy files in the Classes directory to your project.
 
 Usage
 -----------
