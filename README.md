@@ -17,8 +17,12 @@ Copy files in Classes directory to your project.
 Usage
 -----------
 
-The usage of the center button feature is quite similar to UIToolbar with UIBarButtonItem. First of all, import "UIToolbar+EEToolbarCenterButton.h" and turn on the center button feature:
+The usage of the center button feature is quite similar to UIToolbar with UIBarButtonItem. First, import "UIToolbar+EEToolbarCenterButton.h" and turn on the center button feature:
 
+	#import "UIToolbar+EEToolbarCenterButton.h"
+	
+	...
+	
 	self.toolbar.centerButtonFeatureEnabled = YES;
 
 Then create an EEToolbarCenterButtonItem with custom images and an action selector:
