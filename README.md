@@ -1,7 +1,7 @@
 EEToolbarCenterButton
 =============
 
-EEToolbarCenterButton is a component to add a featured button to the center of UIToolbar. It handles button alignment, and helps you use buttom images whose height is larger than UIToolbar height.
+EEToolbarCenterButton is a component to add a featured button to the center of UIToolbar. It handles button alignment, and helps you use button images whose height is larger than UIToolbar height.
 
 ![Screenshot](https://raw.github.com/el-eleven/EEToolbarCenterButton/master/Images/Screenshot.jpg)
 
@@ -24,7 +24,7 @@ The usage of the center button feature is quite similar to UIToolbar with UIBarB
 Then create an EEToolbarCenterButtonItem with custom images and an action selector:
 
     UIImage *centerButtonImage = [UIImage imageNamed:@"ButtonImage"];
-    UIImage *centerButtonImageHighlighted = [UIImage imageNamed:@"HighlighedButtonImage"];
+    UIImage *centerButtonImageHighlighted = [UIImage imageNamed:@"HighlightedButtonImage"];
     UIImage *centerButtonImageDisabled = [UIImage imageNamed:@"DisabledButtonImage"];
     EEToolbarCenterButtonItem *centerButtonItem = [[EEToolbarCenterButtonItem alloc] 
                                                     initWithImage:centerButtonImage
@@ -51,4 +51,4 @@ http://naldzgraphics.net/tutorials/40-best-photoshop-tutorials-for-creating-butt
 Credits
 -----------
 
-Feel free to send pull requests or create new issues if you have feature suggestions or bug reports. If you'are going to use EEToolbarCenterButton in your project, proper attribution would be nice.
+Feel free to send pull requests or create new issues if you have feature suggestions or bug reports. If you're going to use EEToolbarCenterButton in your project, proper attribution would be nice.
