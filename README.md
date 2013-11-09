@@ -20,7 +20,7 @@ Or, just copy files in the Classes directory to your project.
 Usage
 -----------
 
-The usage of the center button feature is quite similar to UIToolbar with UIBarButtonItem. First, import "UIToolbar+EEToolbarCenterButton.h" and turn on the center button feature:
+The usage of the center button feature is quite similar to that of UIToolbar with UIBarButtonItem. First, import "UIToolbar+EEToolbarCenterButton.h" and turn on the center button feature:
 
 	#import "UIToolbar+EEToolbarCenterButton.h"
 	
