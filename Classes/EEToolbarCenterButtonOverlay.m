@@ -37,11 +37,11 @@
 {
     self = [super init];
     if (nil != self) {
-        self.image = image;
-        self.highlightedImage = nil == highlightedImage ? image : highlightedImage;
-        self.disabledImage = nil == disabledImage ? image : disabledImage;
-        self.target = target;
-        self.action = action;
+        _image = image;
+        _highlightedImage = nil == highlightedImage ? image : highlightedImage;
+        _disabledImage = nil == disabledImage ? image : disabledImage;
+        _target = target;
+        _action = action;
         self.enabled = YES;
     }
     return self;

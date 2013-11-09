@@ -29,11 +29,11 @@
 #pragma mark EEToolbarCenterButtonItem
 @interface EEToolbarCenterButtonItem : NSObject
 
-@property (nonatomic, strong) UIImage *image;
-@property (nonatomic, weak) UIImage *highlightedImage;
-@property (nonatomic, weak) UIImage *disabledImage;
-@property (nonatomic, weak) id target;
-@property (nonatomic) SEL action;
+@property (nonatomic, strong, readonly) UIImage *image;
+@property (nonatomic, weak, readonly) UIImage *highlightedImage;
+@property (nonatomic, weak, readonly) UIImage *disabledImage;
+@property (nonatomic, weak, readonly) id target;
+@property (nonatomic, readonly) SEL action;
 @property (nonatomic) BOOL enabled;
 
 - (id)initWithImage:(UIImage *)image
