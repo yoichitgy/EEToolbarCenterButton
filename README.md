@@ -7,7 +7,7 @@ EEToolbarCenterButton is a component to add a featured button to the center of U
 
 Supported Environment
 -----------
-iOS 5 or later with ARC.
+iOS 5 or later.
 
 Installation
 -----------
@@ -15,7 +15,7 @@ EEToolbarCenterButton can be installed by [CocoaPods](http://cocoapods.org/) wit
 
     pod 'EEToolbarCenterButton'
 
-Or, just copy files in the Classes directory to your project.
+Or, just copy files in the Classes directory to your project. In this case, you have to add the `-fobjc-arc` compiler flag to the EEToolbarCenterButton source (.m) files if your project doesn't use ARC.
 
 Usage
 -----------
