@@ -30,8 +30,8 @@
 @interface EEToolbarCenterButtonItem : NSObject
 
 @property (nonatomic, strong, readonly) UIImage *image;
-@property (nonatomic, weak, readonly) UIImage *highlightedImage;
-@property (nonatomic, weak, readonly) UIImage *disabledImage;
+@property (nonatomic, strong, readonly) UIImage *highlightedImage;
+@property (nonatomic, strong, readonly) UIImage *disabledImage;
 @property (nonatomic, weak, readonly) id target;
 @property (nonatomic, readonly) SEL action;
 @property (nonatomic) BOOL enabled;
