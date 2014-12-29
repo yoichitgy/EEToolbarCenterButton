@@ -62,4 +62,16 @@
     return overlay;
 }
 
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+{
+    if (self.centerButtonFeatureEnabled) {
+        EEToolbarCenterButtonOverlay *overlay = self.centerButtonOverlay;
+        CGPoint pointInOverly = [overlay convertPoint:point fromView:self];
+        if ([overlay pointInside:pointInOverly withEvent:event]) {
+            return [overlay hitTest:pointInOverly withEvent:event];
+        }
+    }
+    return [super hitTest:point withEvent:event];
+}
+
 @end
