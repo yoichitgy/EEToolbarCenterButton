@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "EEToolbarCenterButton"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "A featured button at the center of UIToolbar."
   s.description  = <<-DESC
                    EEToolbarCenterButton is a component to add a featured button to the center of UIToolbar. It handles button alignment, and helps you use button images whose height is larger than UIToolbar height.
